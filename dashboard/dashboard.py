@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load dataset
-day_df = pd.read_csv("day.csv")
+day_df = pd.read_csv("data/day.csv")
 day_df["dteday"] = pd.to_datetime(day_df["dteday"])
 day_df.set_index("dteday", inplace=True)
 
